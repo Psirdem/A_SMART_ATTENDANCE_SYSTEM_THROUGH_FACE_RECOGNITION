@@ -12,7 +12,7 @@ image_path = './Images/'
 class Student:
     def __init__(self,root):
         self.root = root
-        self.root.geometry("1540x850")
+        self.root.geometry("1550x850+0+0")
         self.root.title("Face Recognition System")
 
         self.var_name =StringVar()
@@ -20,42 +20,46 @@ class Student:
         self.var_prog = StringVar()
         
         # first image
-        img = Image.open('./Images/knust-entrance.jpg')
-        img_resize = img.resize((500,300), Image.ANTIALIAS)
-        self.photoimg = ImageTk.PhotoImage(img_resize)
+        # img = Image.open('./Images/')
+        # img_resize = img.resize((500,300), Image.ANTIALIAS)
+        # self.photoimg = ImageTk.PhotoImage(img_resize)
 
-        f_lbl = Label(self.root, image=self.photoimg)
-        f_lbl.place(x=0,y=0,width=500,height=130)
+        # f_lbl = Label(self.root, image=self.photoimg)
+        # f_lbl.place(x=0,y=0,width=500,height=130)
 
 
         # second image
-        img1 = Image.open('./Images/face_recog_3.png')
-        img1_resize = img1.resize((500,200), Image.ANTIALIAS)
-        self.photoimg1 = ImageTk.PhotoImage(img1_resize)
+        # img1 = Image.open('./Images/face_recog_3.png')
+        # img1_resize = img1.resize((500,200), Image.ANTIALIAS)
+        # self.photoimg1 = ImageTk.PhotoImage(img1_resize)
 
-        f_lbl = Label(self.root, image=self.photoimg1)
-        f_lbl.place(x=500,y=0,width=500,height=130)
+        # f_lbl = Label(self.root, image=self.photoimg1)
+        # f_lbl.place(x=500,y=0,width=500,height=130)
 
 
         # third image
-        img2 = Image.open('./Images/stdents2.jpg')
-        img2_resize = img2.resize((500,200), Image.ANTIALIAS)
-        self.photoimg2 = ImageTk.PhotoImage(img2_resize)
+        # img2 = Image.open('./Images/stdents2.jpg')
+        # img2_resize = img2.resize((500,200), Image.ANTIALIAS)
+        # self.photoimg2 = ImageTk.PhotoImage(img2_resize)
 
-        f_lbl = Label(self.root, image=self.photoimg2)
-        f_lbl.place(x=1000,y=0,width=500,height=130)
+        # f_lbl = Label(self.root, image=self.photoimg2)
+        # f_lbl.place(x=1000,y=0,width=500,height=130)
+
+        
+        title_lbl = Label(self.root, text="KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",font=("Montserrat",30,"bold"),bg="white",fg="gold")
+        title_lbl.place(x=0,y=0,width=1360,height=120)
 
 
         
         # background image
-        img3 = Image.open('./Images/bg.jpg')
+        img3 = Image.open('./Images/bg1.jpg')
         img3_resize = img3.resize((1530,640), Image.ANTIALIAS)
         self.photoimg3 = ImageTk.PhotoImage(img3_resize)
 
         bg_img = Label(self.root, image=self.photoimg3)
-        bg_img.place(x=0,y=130,width=1530,height=650)
+        bg_img.place(x=0,y=85,width=1530,height=650)
 
-        title_lbl = Label(bg_img, text="STUDENT MANAGEMENT SYSTEM",font=("times new roman",35,"bold"),bg="white",fg="blue")
+        title_lbl = Label(bg_img, text="STUDENT MANAGEMENT SYSTEM",font=("times new roman",25,"bold"),bg="white",fg="blue")
         title_lbl.place(x=0,y=0,width=1530,height=55)
 
         # main frame
@@ -64,7 +68,7 @@ class Student:
 
         # left label frame
         left_frame = LabelFrame(main_frame, bd=3, relief=RIDGE,text='Student Details',font=("times new roman",20,"bold"))
-        left_frame.place(x=400,y=10,width=550,height=460)
+        left_frame.place(x=400,y=20,width=550,height=460)
 
       
 

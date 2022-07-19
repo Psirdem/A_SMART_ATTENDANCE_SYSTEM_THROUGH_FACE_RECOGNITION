@@ -31,16 +31,30 @@ class Attendance:
         self.var_atten_date=StringVar()
         self.var_atten_status=StringVar()
 
-        # background image
-        img3 = Image.open('C:/Users/adoma/Desktop/another_/opencv_face_recognition-master/Tkinter/Images/bg.jpg')
+        # # background image
+        # img3 = Image.open('C:/Users/adoma/Desktop/another_/opencv_face_recognition-master/Tkinter/Images/bg.jpg')
+        # img3_resize = img3.resize((1530,640), Image.ANTIALIAS)
+        # self.photoimg3 = ImageTk.PhotoImage(img3_resize)
+
+        # bg_img = Label(self.root, image=self.photoimg3)
+        # bg_img.place(x=0,y=0,width=1530,height=650)
+
+        # title_lbl = Label(bg_img, text="ATTENDANCE SYSTEM",font=("times new roman",35,"bold"),bg="red",fg="blue")
+        # title_lbl.place(x=0,y=0,width=1530,height=55)
+
+        title_lbl = Label(self.root, text="KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",font=("Montserrat",30,"bold"),bg="white",fg="gold")
+        title_lbl.place(x=0,y=0,width=1360,height=120)
+
+         # background image
+        img3 = Image.open('./Images/bg2.jpg')
         img3_resize = img3.resize((1530,640), Image.ANTIALIAS)
         self.photoimg3 = ImageTk.PhotoImage(img3_resize)
 
         bg_img = Label(self.root, image=self.photoimg3)
-        bg_img.place(x=0,y=0,width=1530,height=650)
+        bg_img.place(x=0,y=110,width=1530,height=700)
 
-        title_lbl = Label(bg_img, text="ATTENDANCE SYSTEM",font=("times new roman",35,"bold"),bg="red",fg="blue")
-        title_lbl.place(x=0,y=0,width=1530,height=55)
+        titel_lbl = Label(bg_img, text="ATTENDANCE MANAGEMENT",font=("times new roman",25,"bold"),bg="white",fg="blue")
+        titel_lbl.place(x=0,y=0,width=1530,height=60)
 
         # main frame
         main_frame = Frame(bg_img,bd=2)
@@ -92,7 +106,7 @@ class Attendance:
         btn_frame.place(x=35,y=320,width=490,height=35)
 
         # import button
-        import_btn=Button(btn_frame,text="Import Excel File",command=self.importExcel, width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        import_btn=Button(btn_frame,text="Import CSV File",command=self.importExcel, width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
         import_btn.grid(row=0,column=0)
 
         # Send Via Email button

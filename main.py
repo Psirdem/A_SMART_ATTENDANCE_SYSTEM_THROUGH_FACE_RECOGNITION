@@ -10,7 +10,7 @@ from attendance import Attendance
 class Face_Recognition_Sytem:
     def __init__(self,root):
         self.root = root
-        self.root.geometry("1540x850+0+0")
+        self.root.geometry("1550x850+0+0")
         self.root.title("Face Recognition System")
 
         # first image
@@ -22,7 +22,7 @@ class Face_Recognition_Sytem:
         # f_lbl.place(x=0,y=0,width=500,height=130)
 
         title_lbl = Label(self.root, text="KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",font=("Montserrat",30,"bold"),bg="white",fg="gold")
-        title_lbl.place(x=0,y=0,width=1400,height=55)
+        title_lbl.place(x=0,y=0,width=1360,height=120)
 
 
          # second image
@@ -48,10 +48,10 @@ class Face_Recognition_Sytem:
         self.photoimg3 = ImageTk.PhotoImage(img3_resize)
 
         bg_img = Label(self.root, image=self.photoimg3)
-        bg_img.place(x=0,y=50,width=1530,height=700)
+        bg_img.place(x=0,y=110,width=1530,height=700)
 
         titel_lbl = Label(bg_img, text="SMART ATTENDANCE SYSTEM SOFTWARE",font=("times new roman",25,"bold"),bg="white",fg="blue")
-        titel_lbl.place(x=0,y=0,width=1530,height=100)
+        titel_lbl.place(x=0,y=0,width=1530,height=60)
 
         
         # student button
@@ -60,10 +60,10 @@ class Face_Recognition_Sytem:
         self.photoimg4 = ImageTk.PhotoImage(img4_resize)
 
         b1 = Button( bg_img,image=self.photoimg4,command=self.student_details, cursor='hand2')
-        b1.place(x=200,y=100,width=250,height=180)
+        b1.place(x=200,y=80,width=250,height=180)
 
         b1_1 = Button(bg_img,text='Student Details',command=self.student_details, cursor='hand2',font=("times new roman",15,"bold"),bg="darkblue",fg="white")
-        b1_1.place(x=200,y=280,width=250,height=40)
+        b1_1.place(x=200,y=260,width=250,height=40)
 
        
          # Train Dataset button
@@ -72,10 +72,10 @@ class Face_Recognition_Sytem:
         self.photoimg5 = ImageTk.PhotoImage(img5_resize)
 
         b1 = Button( bg_img,image=self.photoimg5,command=self.train_data,cursor='hand2')
-        b1.place(x=550,y=100,width=250,height=180)
+        b1.place(x=550,y=80,width=250,height=180)
 
         b1_1 = Button(bg_img,text='Train Datasets',command=self.train_data,cursor='hand2',font=("times new roman",15,"bold"),bg="darkblue",fg="white")
-        b1_1.place(x=550,y=280,width=250,height=40)
+        b1_1.place(x=550,y=260,width=250,height=40)
 
         # Recognition        
         img6 = Image.open('./Images/img3.jpg')
@@ -83,10 +83,10 @@ class Face_Recognition_Sytem:
         self.photoimg6 = ImageTk.PhotoImage(img6_resize)
 
         b1 = Button( bg_img,image=self.photoimg6,command=self.recognize_face, cursor='hand2')
-        b1.place(x=900,y=100,width=250,height=180)
+        b1.place(x=900,y=80,width=250,height=180)
 
         b1_1 = Button(bg_img,text='Recognition',cursor='hand2',command=self.recognize_face, font=("times new roman",15,"bold"),bg="darkblue",fg="white")
-        b1_1.place(x=900,y=280,width=250,height=40)
+        b1_1.place(x=900,y=260,width=250,height=40)
        
    
         # Attendance button
@@ -95,10 +95,10 @@ class Face_Recognition_Sytem:
         self.photoimg7 = ImageTk.PhotoImage(img7_resize)
 
         b1 = Button( bg_img,image=self.photoimg7,command=self.attendance_data, cursor='hand2')
-        b1.place(x=200,y=370,width=250,height=180)
+        b1.place(x=200,y=340,width=250,height=180)
 
         b1_1 = Button(bg_img,text='Attendance',command=self.attendance_data, cursor='hand2',font=("times new roman",15,"bold"),bg="darkblue",fg="white")
-        b1_1.place(x=200,y=550,width=250,height=40)
+        b1_1.place(x=200,y=520,width=250,height=40)
 
 
 
