@@ -62,7 +62,7 @@ class Recognition:
 
 
         # # button
-        b1_1 = Button(self.root,text='Recognize Face',cursor='hand2',command=self.face_recognition, font=("times new roman",20,"bold"),bg="red",fg="white")
+        b1_1 = Button(self.root,text='Train Datasets',cursor='hand2',command=self.face_recognition, font=("times new roman",20,"bold"),bg="red",fg="white")
         b1_1.place(x=500,y=570,width=400,height=50)
 
 

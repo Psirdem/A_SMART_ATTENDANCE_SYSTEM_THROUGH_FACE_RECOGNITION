@@ -15,31 +15,48 @@ class Train:
         self.root.title("Face Recognition System")
 
         # title
-        title_lbl = Label(self.root, text="TRAIN DATASETS",font=("times new roman",35,"bold"),bg="white",fg="blue")
-        title_lbl.place(x=0,y=0,width=1530,height=55)
+        title_lbl = Label(self.root, text="KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",font=("Montserrat",30,"bold"),bg="white",fg="gold")
+        title_lbl.place(x=0,y=0,width=1360,height=120)
 
+
+        
+        # background image
+        img3 = Image.open('./Images/students.jpg')
+        img3_resize = img3.resize((1530,640), Image.ANTIALIAS)
+        self.photoimg3 = ImageTk.PhotoImage(img3_resize)
+
+        bg_img = Label(self.root, image=self.photoimg3)
+        bg_img.place(x=0,y=110,width=1530,height=700)
+
+        titel_lbl = Label(bg_img, text="TRAINING DATASETS",font=("times new roman",25,"bold"),bg="white",fg="blue")
+        titel_lbl.place(x=-100,y=0,width=1530,height=60)
        
+        # # button
+        b1_1 = Button(self.root,text='Train Datasets',cursor='hand2',command=self.train_classifier, font=("times new roman",20,"bold"),bg="red",fg="white")
+        b1_1.place(x=500,y=440,width=400,height=50)
+
+
 
         # image top label
-        img_top = Image.open('./Images/face_recog_3.png')
-        img_top = img_top.resize((1500,300), Image.ANTIALIAS)
-        self.photoimg_top = ImageTk.PhotoImage(img_top)
+        # img_top = Image.open('./Images/face_recog_3.png')
+        # img_top = img_top.resize((1500,300), Image.ANTIALIAS)
+        # self.photoimg_top = ImageTk.PhotoImage(img_top)
 
-        bg_img = Label(self.root, image=self.photoimg_top)
-        bg_img.place(x=0,y=55,width=1500,height=300)
+        # bg_img = Label(self.root, image=self.photoimg_top)
+        # bg_img.place(x=0,y=55,width=1500,height=300)
 
-        # button
-        b1_1 = Button(self.root,text='TRAIN DATA',cursor='hand2',command=self.train_classifier, font=("times new roman",20,"bold"),bg="darkblue",fg="white")
-        b1_1.place(x=0,y=350,width=1530,height=50)
+        # # button
+        # b1_1 = Button(self.root,text='TRAIN DATA',cursor='hand2',command=self.train_classifier, font=("times new roman",20,"bold"),bg="darkblue",fg="white")
+        # b1_1.place(x=0,y=350,width=1530,height=50)
 
 
-        # image buttom label
-        img_bottom = Image.open('./Images/training1.jpg')
-        img_bottom = img_bottom.resize((1500,300), Image.ANTIALIAS)
-        self.photoimg_bottom = ImageTk.PhotoImage(img_bottom)
+        # # image buttom label
+        # img_bottom = Image.open('./Images/training1.jpg')
+        # img_bottom = img_bottom.resize((1500,300), Image.ANTIALIAS)
+        # self.photoimg_bottom = ImageTk.PhotoImage(img_bottom)
 
-        bg_img = Label(self.root, image=self.photoimg_bottom)
-        bg_img.place(x=0,y=400,width=1500,height=300)
+        # bg_img = Label(self.root, image=self.photoimg_bottom)
+        # bg_img.place(x=0,y=400,width=1500,height=300)
 
     # # Training codes
     # global path

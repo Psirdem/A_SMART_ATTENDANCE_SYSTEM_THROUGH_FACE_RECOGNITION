@@ -90,7 +90,7 @@ class Face_Recognition_Sytem:
        
    
         # Attendance button
-        img7 = Image.open('./Images/img1.jpg')
+        img7 = Image.open('./Images/attendance.jpg')
         img7_resize = img7.resize((200,200), Image.ANTIALIAS)
         self.photoimg7 = ImageTk.PhotoImage(img7_resize)
 
