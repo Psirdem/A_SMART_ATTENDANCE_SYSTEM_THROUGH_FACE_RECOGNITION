@@ -19,31 +19,6 @@ class Student:
         self.var_std = StringVar()
         self.var_prog = StringVar()
         
-        # first image
-        # img = Image.open('./Images/')
-        # img_resize = img.resize((500,300), Image.ANTIALIAS)
-        # self.photoimg = ImageTk.PhotoImage(img_resize)
-
-        # f_lbl = Label(self.root, image=self.photoimg)
-        # f_lbl.place(x=0,y=0,width=500,height=130)
-
-
-        # second image
-        # img1 = Image.open('./Images/face_recog_3.png')
-        # img1_resize = img1.resize((500,200), Image.ANTIALIAS)
-        # self.photoimg1 = ImageTk.PhotoImage(img1_resize)
-
-        # f_lbl = Label(self.root, image=self.photoimg1)
-        # f_lbl.place(x=500,y=0,width=500,height=130)
-
-
-        # third image
-        # img2 = Image.open('./Images/stdents2.jpg')
-        # img2_resize = img2.resize((500,200), Image.ANTIALIAS)
-        # self.photoimg2 = ImageTk.PhotoImage(img2_resize)
-
-        # f_lbl = Label(self.root, image=self.photoimg2)
-        # f_lbl.place(x=1000,y=0,width=500,height=130)
 
         
         title_lbl = Label(self.root, text="KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",font=("Montserrat",30,"bold"),bg="white",fg="gold")

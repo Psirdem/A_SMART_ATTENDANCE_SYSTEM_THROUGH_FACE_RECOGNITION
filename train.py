@@ -36,31 +36,6 @@ class Train:
         b1_1.place(x=500,y=440,width=400,height=50)
 
 
-
-        # image top label
-        # img_top = Image.open('./Images/face_recog_3.png')
-        # img_top = img_top.resize((1500,300), Image.ANTIALIAS)
-        # self.photoimg_top = ImageTk.PhotoImage(img_top)
-
-        # bg_img = Label(self.root, image=self.photoimg_top)
-        # bg_img.place(x=0,y=55,width=1500,height=300)
-
-        # # button
-        # b1_1 = Button(self.root,text='TRAIN DATA',cursor='hand2',command=self.train_classifier, font=("times new roman",20,"bold"),bg="darkblue",fg="white")
-        # b1_1.place(x=0,y=350,width=1530,height=50)
-
-
-        # # image buttom label
-        # img_bottom = Image.open('./Images/training1.jpg')
-        # img_bottom = img_bottom.resize((1500,300), Image.ANTIALIAS)
-        # self.photoimg_bottom = ImageTk.PhotoImage(img_bottom)
-
-        # bg_img = Label(self.root, image=self.photoimg_bottom)
-        # bg_img.place(x=0,y=400,width=1500,height=300)
-
-    # # Training codes
-    # global path
-    # path = 'dataset'
     if not os.path.exists('./recognizer'):
         os.makedirs('./recognizer')
 

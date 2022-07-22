@@ -25,29 +25,6 @@ class Recognition:
         title_lbl = Label(self.root, text="KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY",font=("Montserrat",30,"bold"),bg="white",fg="gold")
         title_lbl.place(x=0,y=0,width=1360,height=120)
 
-        # img_top = Image.open("C:/Users/adoma/Desktop/another_/opencv_face_recognition-master/Tkinter/Images/train1.jpg")
-        # img_top_resize = img_top.resize((1530,130),Image.ANTIALIAS)
-        # self.photoimg_top = PhotoImage(img_top_resize)
-
-        # f_lbl = Label(self.root,image=self.photoimg_top)
-        # f_lbl.place(x=5,y=0,width=720,height=130)
-
-        # # 1ST top label
-        # img_top = Image.open('./Images/face_recog_3.png')
-        # img_top = img_top.resize((700,700), Image.ANTIALIAS)
-        # self.photoimg_top = ImageTk.PhotoImage(img_top)
-
-        # bg_img = Label(self.root, image=self.photoimg_top)
-        # bg_img.place(x=0,y=55,width=700,height=700)
-
-       
-        # # 2ND buttom label
-        # img_bottom = Image.open('./Images/main_top4.jpg')
-        # img_bottom = img_bottom.resize((700,700), Image.ANTIALIAS)
-        # self.photoimg_bottom = ImageTk.PhotoImage(img_bottom)
-
-        # bg_img = Label(self.root, image=self.photoimg_bottom)
-        # bg_img.place(x=700,y=55,width=700,height=700)
 
          # background image
         img3 = Image.open('./Images/recog.jpg')
@@ -62,7 +39,7 @@ class Recognition:
 
 
         # # button
-        b1_1 = Button(self.root,text='Train Datasets',cursor='hand2',command=self.face_recognition, font=("times new roman",20,"bold"),bg="red",fg="white")
+        b1_1 = Button(self.root,text='Recognize Face',cursor='hand2',command=self.face_recognition, font=("times new roman",20,"bold"),bg="red",fg="white")
         b1_1.place(x=500,y=570,width=400,height=50)
 
 
